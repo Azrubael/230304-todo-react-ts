@@ -1,9 +1,7 @@
 import React from "react";
+import { Todo } from "../types/Todo";
 
-interface TodoItemProps {
-  id: string,
-  title: string,
-  completed: boolean,
+interface TodoItemProps extends Todo {
   children?: React.ReactNode,
   style?: React.CSSProperties,
 }
